@@ -14,5 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $languages = ['HTML', 'CSS', 'JavaScript', 'PHP'];
+    return view('home', compact('languages'));
 });
